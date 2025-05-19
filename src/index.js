@@ -1,4 +1,9 @@
-// index.js
-import { greeting } from "./greeting.js";
+import "./style/style.css"
 
-console.log(greeting);
+const createHeader = function () {
+    const header = document.querySelector("#header");
+
+    header.textContent = "WHAT THE BROWN";
+}
+
+createHeader();
