@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div id="header">AXOS BANK</div>
@@ -23,7 +24,7 @@
                 <h1 class="panelTitle add">
                     Projects
                     <button class="btn">
-                        <img class = "favicon" src="./imgs/plus.svg" alt="add to projects">
+                        <img class = "favicon plusHover" src="./imgs/plus.svg" alt="add to projects">
                     </button>
                 </h1>
                 <ul id="Projects">
@@ -32,7 +33,9 @@
             </div>
         </div>
         <div id="rightPanel">
-            <h1>Subject</h1>
+            <h1 id = "currSubject">Subject</h1>
+            <ul id="toDo card">
+            </ul>
         </div>
     </div>
     <div id="footer">

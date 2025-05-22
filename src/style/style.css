@@ -19,6 +19,7 @@ body{
     flex-direction: column;
     height: 100%;
     width:100%;
+
 }
 
 #header {
@@ -30,6 +31,7 @@ body{
     padding:10px 20px;
     font-weight: 900;
 }
+
 
 #content {
     display: flex;
@@ -91,6 +93,8 @@ justify-content: center;
 
 .add:hover {
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+background-color: rgba(128, 128, 128, 0.55);
+border-radius: 10px;
 transform: translateY(-1px); /* Optional: slight lift effect */
 }
 
@@ -100,5 +104,7 @@ h1 {
 }
 
 ul {
+    list-style-type: none;
+    padding: 10px;
     margin: 0;
 }
