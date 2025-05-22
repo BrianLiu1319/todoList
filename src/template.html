@@ -6,29 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="header"></div>
+    <div id="header">AXOS BANK</div>
     <div id="content">
-        <div id="sidebar">
-            <nav id="leftPanel">
-                <div>
-                    <h1>Home</h1>
-                    <ul id="home">
-                        <li>Inbox</li>
-                        <li>Today</li>
-                        <li>Week</li>
-                        <li>Important</li>
-                        <li>Completed</li>
-                    </ul>
-                </div>
-                <div>
+        <div id="leftPanel">
+            <div class="leftCell">
+                <h1>Home</h1>
+                <ul id="home">
+                    <li>Inbox</li>
+                    <li>Today</li>
+                    <li>Week</li>
+                    <li>Important</li>
+                    <li>Completed</li>
+                </ul>
+            </div>
+            <div class="leftCell">
+                <h1 class="panelTitle add">
+                    Projects
+                    <button class="btn">
+                        <img class = "favicon" src="./imgs/plus.svg" alt="add to projects">
+                    </button>
+                </h1>
+                <ul id="Projects">
+                </ul>
 
-                    <h1>Projects</h1>
-                    <ul id="Projects">
-
-                    </ul>
-                </div>
-
-            </nav>
+            </div>
         </div>
         <div id="rightPanel">
             <h1>Subject</h1>
