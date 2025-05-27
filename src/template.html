@@ -48,11 +48,26 @@
     <div id="popup" class="popup">
         <div class="popup-content">
             <h2>Add Task</h2>
-            <p>This is the popup content.</p>
-            <div class="buttons">
-                <button id="addBtn" class="add">Add</button>
-                <button id="closeBtn" class="close">Cancel</button>
-            </div>
+            <form > Task
+                <label for="title" >Task: </label><br>
+                <input type="text" id="title" name="title"><br>
+
+                <label for="detail" >Details: </label><br>
+                <input type="text" id="detail" name="detail"><br>
+
+                <label for="date" >Date: </label><br>
+                <input type="text" id="date" name="date"><br>
+
+                <label for="priority" >Priority? </label><br>
+                <input type="checkbox" id="priority" name="priority"><br>
+
+
+                <div class="buttons">
+                    <button id="addBtn" value="Submit">Add</button>
+                    <button id="closeBtn" class="close">Cancel</button>
+                </div>
+            </form>
+
         </div>
     </div>
 </body>
