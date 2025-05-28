@@ -144,3 +144,25 @@ ul {
     display:flex;
     gap: 10px;
   }
+
+  .add-proj {
+    display: flex;
+    height: 30px;
+
+  }
+
+  button {
+  all: unset;
+  cursor: pointer;
+}
+
+#openBtn {
+  padding:5px;
+}
+.flx {
+  display:flex;
+  width: 100%;
+  align-items: center;
+  margin-left: 10px;
+
+}

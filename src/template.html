@@ -32,13 +32,21 @@
 
             </div>
         </div>
+
         <div id="rightPanel">
             <h1>Subject</h1>
             <ul id="todoList">
             </ul>
-            <button id="openBtn">Open Popup</button>
             
+            <div class="button-subj">
+                <button id="openBtn" class="btn add-proj-button">
+                    <img  src="./imgs/plus.svg" class="add-proj"></img>
+                    <div class="flx">
+                    add to project
 
+                    </div>
+                </button>
+            </div>
         </div>
     </div>
     <div id="footer">
@@ -48,7 +56,7 @@
     <div id="popup" class="popup">
         <div class="popup-content">
             <h2>Add Task</h2>
-            <form > Task
+            <form>
                 <label for="title" >Task: </label><br>
                 <input type="text" id="title" name="title"><br>
 
@@ -56,7 +64,7 @@
                 <input type="text" id="detail" name="detail"><br>
 
                 <label for="date" >Date: </label><br>
-                <input type="text" id="date" name="date"><br>
+                <input type="date" id="date" name="date"><br>
 
                 <label for="priority" >Priority? </label><br>
                 <input type="checkbox" id="priority" name="priority"><br>
