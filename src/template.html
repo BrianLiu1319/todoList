@@ -13,21 +13,19 @@
             <div class="leftCell">
                 <h1>Home</h1>
                 <ul id="home">
-                    <li>Inbox</li>
+                    <li>All Tasks</li>
                     <li>Today</li>
-                    <li>Week</li>
                     <li>Important</li>
-                    <li>Completed</li>
                 </ul>
             </div>
             <div class="leftCell">
                 <h1 class="panelTitle">
                     Projects
                     <button class="btn">
-                        <img class = "favicon plusHover add" src="./imgs/plus.svg" alt="add to projects">
+                        <img class = "favicon plusHover add " src="./imgs/plus.svg" alt="add to projects" id="addProjBtn">
                     </button>
                 </h1>
-                <ul id="Projects">
+                <ul id="projects">
                 </ul>
 
             </div>
@@ -56,7 +54,7 @@
     <div id="popup" class="popup" style="display:none;">
         <div class="popup-content">
             <h2>Add Task</h2>
-            <form>
+            <form id="taskForm">
             <label for="title">Task:</label><br />
             <input type="text" id="title" name="title" /><br />
 
@@ -71,11 +69,28 @@
 
             <div class="buttons">
                 <button id="submitBtn" type="submit">Add</button>
-                <button id="closeBtn" class="close" type="button">Cancel</button>
+                <button id="closeBtn1" class="close" type="button">Cancel</button>
             </div>
             </form>
         </div>
     </div>
-    
+
+
+    <div id="ProjPopup" class="popup" style="display:none;">
+        <div class="popup-content">
+            <h2>Add Project</h2>
+            <form id="projForm">
+                <label for="projTitle">Project Title:</label><br />
+                <input type="text" id="projTitle" name="projTitle" /><br />
+
+                <div class="buttons">
+                    <button id="submitProjBtn" type="submit">Add</button>
+                    <button id="closeBtn2" class="close" type="button">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
 </body>
 </html>

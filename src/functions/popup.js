@@ -4,13 +4,15 @@ export function setUpPopup() {
   document.addEventListener("DOMContentLoaded", () => {
     const popup = document.getElementById("popup");
     const openBtn = document.getElementById("openBtn");
-    const closeBtn = document.getElementById("closeBtn");
+    const closeBtn1 = document.getElementById("closeBtn1");
+
+
 
     openBtn.addEventListener("click", () => {
         popup.style.display = "flex";
     });
 
-    closeBtn.addEventListener("click", () => {
+    closeBtn1.addEventListener("click", () => {
         popup.style.display = "none";
     });
 
@@ -18,9 +20,10 @@ export function setUpPopup() {
         if (e.target == popup) {
         popup.style.display = "none";
         }
+
     });
 
-    const form = document.querySelector("form");
+    const form = document.getElementById("taskForm");
 
     form?.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -37,5 +40,4 @@ export function setUpPopup() {
         popup.style.display = "none";
     });
     });
-
 }
