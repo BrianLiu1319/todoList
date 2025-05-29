@@ -24,8 +24,7 @@ window.addEventListener("click", (e) => {
 });
 
 
-// let projs = new Map();
-
+let projs = new Map();
 
 
 const form = document.querySelector("#projForm");
@@ -36,7 +35,7 @@ const form = document.querySelector("#projForm");
       const projSelector = document.getElementById("projects");
 
       // need to add to project List and display onto project UL
-      // projs.set('title', []);
+      projs.set(title, []);
       
       const newLi = document.createElement("li");
       newLi.textContent = title;
