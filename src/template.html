@@ -21,10 +21,10 @@
                 </ul>
             </div>
             <div class="leftCell">
-                <h1 class="panelTitle add">
+                <h1 class="panelTitle">
                     Projects
                     <button class="btn">
-                        <img class = "favicon plusHover" src="./imgs/plus.svg" alt="add to projects">
+                        <img class = "favicon plusHover add" src="./imgs/plus.svg" alt="add to projects">
                     </button>
                 </h1>
                 <ul id="Projects">
@@ -38,9 +38,9 @@
             <ul id="todoList">
             </ul>
             
-            <div class="button-subj">
-                <button id="openBtn" class="btn add-proj-button">
-                    <img  src="./imgs/plus.svg" class="add-proj"></img>
+            <div class="button-subj " >
+                <button id="openBtn" class="btn add-proj-button ">
+                    <img  src="./imgs/plus.svg" class="add-proj add"></img>
                     <div class="flx">
                     add to project
 
@@ -53,30 +53,29 @@
         footer
     </div>
 
-    <div id="popup" class="popup">
+    <div id="popup" class="popup" style="display:none;">
         <div class="popup-content">
             <h2>Add Task</h2>
             <form>
-                <label for="title" >Task: </label><br>
-                <input type="text" id="title" name="title"><br>
+            <label for="title">Task:</label><br />
+            <input type="text" id="title" name="title" /><br />
 
-                <label for="detail" >Details: </label><br>
-                <input type="text" id="detail" name="detail"><br>
+            <label for="detail">Details:</label><br />
+            <input type="text" id="detail" name="detail" /><br />
 
-                <label for="date" >Date: </label><br>
-                <input type="date" id="date" name="date"><br>
+            <label for="date">Date:</label><br />
+            <input type="date" id="date" name="date" /><br />
 
-                <label for="priority" >Priority? </label><br>
-                <input type="checkbox" id="priority" name="priority"><br>
+            <label for="priority">Priority?</label><br />
+            <input type="checkbox" id="priority" name="priority" /><br />
 
-
-                <div class="buttons">
-                    <button id="addBtn" value="Submit">Add</button>
-                    <button id="closeBtn" class="close">Cancel</button>
-                </div>
+            <div class="buttons">
+                <button id="submitBtn" type="submit">Add</button>
+                <button id="closeBtn" class="close" type="button">Cancel</button>
+            </div>
             </form>
-
         </div>
     </div>
+    
 </body>
 </html>
