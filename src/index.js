@@ -24,18 +24,27 @@ window.addEventListener("click", (e) => {
 });
 
 
-const form = document.querySelector("projForm");
+// let projs = new Map();
+
+
+
+const form = document.querySelector("#projForm");
   form?.addEventListener("submit", (event) => {
       event.preventDefault();
 
       const title = document.getElementById("projTitle").value;
-
+      const projSelector = document.getElementById("projects");
 
       // need to add to project List and display onto project UL
+      // projs.set('title', []);
+      
+      const newLi = document.createElement("li");
+      newLi.textContent = title;
 
+      projSelector.appendChild(newLi);
 
       form.reset();
-      popup.style.display = "none";
+      projPopup.style.display = "none";
   });
 
 
